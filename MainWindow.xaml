@@ -1,0 +1,61 @@
+﻿<Window x:Class="showdow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:showdow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="334.2" Width="245" Closed="Window_Closed" >
+    <StackPanel Margin="0,0,4,0">
+        <Label></Label>
+        <StackPanel Orientation="Horizontal">
+            <Label>
+                id du compte
+            </Label>
+            <TextBox x:Name="_compte" Width="103"/>
+        </StackPanel>
+        <Label></Label>
+       <StackPanel Orientation="Horizontal">
+            <Label Width="79">
+                Tier:
+            </Label>
+            <TextBox x:Name="_Tier" Width="104"/>
+        </StackPanel>
+        <Label></Label>
+ <StackPanel Orientation="Horizontal">
+            <Label Width="75">Points elo</Label>
+            <CheckBox Margin="0,5,0,0" x:Name="_eloBool" Click="_eloBool_Click"></CheckBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>Place ladder</Label>
+            <CheckBox Margin="0,5,0,0" x:Name="_LadderBool" Click="_LadderBool_Checked"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="75">Gxe</Label>
+            <CheckBox Margin="0,5,0,0" x:Name="_GxeBool" Click="_GxeBool_Checked"/>
+        </StackPanel>
+        <Label></Label>
+        <StackPanel Orientation="Horizontal">
+            <Label>Changer la police</Label>
+            <Button Click="Button_Click_1">Changer</Button>
+        </StackPanel>
+        <Label></Label>
+        <StackPanel Orientation="Horizontal">
+            <Label>Maj auto toutes les 30s</Label>
+           <!-- <ComboBox Margin="10,0,10,0" SelectedIndex="0">
+                <ComboBoxItem  x:Name="_s30">30 sec</ComboBoxItem>
+                <ComboBoxItem x:Name="_s60">1 min</ComboBoxItem>
+                <ComboBoxItem x:Name="_s120">2 min</ComboBoxItem>
+            </ComboBox>-->
+            <Button  x:Name="ti"  Click="Button_Click_2">Lancer timer</Button>
+        </StackPanel>
+        <Label></Label>
+        <StackPanel>
+            <Button Click="Button_Click">Mettre à jour Directement</Button>
+        </StackPanel>
+        <Label></Label>
+        <StackPanel>
+            <Button Click="Button_Click2">Sauvegarder les parametres</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
