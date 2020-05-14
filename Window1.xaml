@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:showdow"
         mc:Ignorable="d" 
         WindowStyle="None" AllowsTransparency="True" Background="Transparent"
-        Title="Window1" Height="69.027" Width="737.611" ResizeMode="NoResize"  >
+        Title="Window1" Height="140.027" Width="737.611" ResizeMode="NoResize"  >
 
     <Grid  >
-        <Label x:Name="labe"  Content="{Binding strAAfficher , UpdateSourceTrigger=PropertyChanged}" Background="Transparent" Foreground="Firebrick" FontSize="30" MouseLeftButtonDown="Button_MouseLeftButtonDown" ></Label>
+        <Label x:Name="labe" Height="130"  Content="{Binding strAAfficher , UpdateSourceTrigger=PropertyChanged}" Background="Transparent" Foreground="Firebrick" FontSize="30" MouseLeftButtonDown="Button_MouseLeftButtonDown" ></Label>
     </Grid>
 </Window>
